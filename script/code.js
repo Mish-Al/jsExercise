@@ -1,3 +1,5 @@
+// Q1
+
 // 1. Variable
     // Variables are containers for storing information.
 // 2. Value
@@ -18,7 +20,25 @@
     // Use a while loop when the increment value is nonstandard.
 // 8. Define hoisting and variable scoping
     // Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution.
-    function fullName(){
-        return console.log("Mish-Al Taliep")
-    }
-    fullName()
+    // function fullName(){
+    //     return console.log("Mish-Al Taliep")
+    // }
+    // fullName()
+
+
+// Q2
+let person = {
+    firstName : "Mish-Al",
+    lastName : "Taliep",
+    age : "21",
+    subjects : "Life Science, Business Studies"
+}
+let address = {
+    streetName:"Wesley Street",
+    streetNumb: "15",
+    suburb: "Athlone",
+    city:"Cape Town",
+    country: "South Africa"
+}
+console.log(person);
+console.log(address);
