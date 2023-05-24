@@ -27,18 +27,47 @@
 
 
 // Q2
-let person = {
-    firstName : "Mish-Al",
-    lastName : "Taliep",
-    age : "21",
-    subjects : "Life Science, Business Studies"
-}
-let address = {
-    streetName:"Wesley Street",
-    streetNumb: "15",
-    suburb: "Athlone",
-    city:"Cape Town",
-    country: "South Africa"
-}
-console.log(person);
-console.log(address);
+// let person = {
+//     firstName : "Mish-Al",
+//     lastName : "Taliep",
+//     age : "21",
+//     subjects : "Life Science, Business Studies"
+// }
+// let address = {
+//     streetName:"Wesley Street",
+//     streetNumb: "15",
+//     suburb: "Athlone",
+//     city:"Cape Town",
+//     country: "South Africa"
+// }
+// console.log(person);
+// console.log(address);
+
+
+// Q3
+
+const numb1 = document.querySelector('#num1')
+const operator = document.querySelector('#opp')
+const numb2 = document.querySelector('#num2')
+const button = document.querySelector('#btn')
+const answer = document.querySelector('#result')
+
+button.addEventListener('click',()=>{
+
+    let equation = eval(numb1.value + operator.value + numb2.value)
+
+    if(numb1,numb2,operator == ''){
+        numb1,numb2,operator === ''
+    }else{
+        answer.innerHTML = equation
+    }
+})
+
+// function displayResult() {
+//     // Get the input value
+//     var inputValue = document.getElementById("inputValue").value;
+//     let method = eval(firstValue.value + operator.value + secondValue.value)
+  
+//     // Display the result on the label
+//     document.getElementById("lblResult").innerHTML = "Result: " + inputValue;
+//   }
