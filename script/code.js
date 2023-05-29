@@ -46,22 +46,22 @@
 
 // Q3
 
-const numb1 = document.querySelector('#num1')
-const operator = document.querySelector('#opp')
-const numb2 = document.querySelector('#num2')
-const button = document.querySelector('#btn')
-const answer = document.querySelector('#result')
+// const numb1 = document.querySelector('#num1')
+// const operator = document.querySelector('#opp')
+// const numb2 = document.querySelector('#num2')
+// const button = document.querySelector('#btn')
+// const answer = document.querySelector('#result')
 
-button.addEventListener('click',()=>{
+// button.addEventListener('click',()=>{
 
-    let equation = eval(numb1.value + operator.value + numb2.value)
+//     let equation = eval(numb1.value + operator.value + numb2.value)
 
-    if(numb1,numb2,operator == ''){
-        numb1,numb2,operator === ''
-    }else{
-        answer.innerHTML = equation
-    }
-})
+//     if(numb1,numb2,operator == ''){
+//         numb1,numb2,operator === ''
+//     }else{
+//         answer.innerHTML = equation
+//     }
+// })
 
 // function displayResult() {
 //     // Get the input value
@@ -71,3 +71,9 @@ button.addEventListener('click',()=>{
 //     // Display the result on the label
 //     document.getElementById("lblResult").innerHTML = "Result: " + inputValue;
 //   }
+let  subject = "programming"
+
+function revLetters (subject){
+    return subject.split('').reverse().join('')
+}
+console.log(revLetters(subject))
