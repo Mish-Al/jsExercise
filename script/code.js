@@ -71,9 +71,24 @@
 //     // Display the result on the label
 //     document.getElementById("lblResult").innerHTML = "Result: " + inputValue;
 //   }
-let  subject = "programming"
+// let  subject = "programming"
 
-function revLetters (subject){
-    return subject.split('').reverse().join('')
+// function revLetters (subject){
+//     return subject.split('').reverse().join('')
+// }
+// console.log(revLetters(subject))
+
+
+
+let info = [
+    {
+    name: 'Mish-Al',
+    dob: new Date('2002-5-31')
 }
-console.log(revLetters(subject))
+]
+
+let birth = info.find(info => info.dob === info.dob)
+let today = new Date();
+
+console.log(info[0].dob.getDate() - today.getDate(),"2 Days Left until Mish's birthday");
+console.log('Mish is: ', today.getFullYear() - info[0].dob.getFullYear(), "years old!")
